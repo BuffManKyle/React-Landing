@@ -3,14 +3,20 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 55vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Logo-text{
+  padding: 0;
+  margin: 0;
+}
+
+.bird {
+  height: 55vmin;
+  position: absolute;
+  right: 5%;
+  top: 1%;
 }
 
 .App-header {
@@ -28,11 +34,23 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+/* mobile styles */
+@media (max-width: 767px) {
+  .App-logo {
+  height: 55vmin;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .bird {
+  height: 40vmin;
+  right: 2%;
   }
-}
+  
+  .App-header {
+  padding: 2rem;
+  }
+  
+  .App-link {
+  font-size: 1.5rem;
+  }
+  }
